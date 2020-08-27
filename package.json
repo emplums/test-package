@@ -1,0 +1,19 @@
+{
+  "name": "test-package-emplums",
+  "version": "1.0.0",
+  "description": "a test package for testing primer/publish",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emplums/test-package.git"
+  },
+  "author": "emplums",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emplums/test-package/issues"
+  },
+  "homepage": "https://github.com/emplums/test-package#readme"
+}
