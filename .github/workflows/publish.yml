@@ -4,8 +4,11 @@ on: [push]
 jobs:
   publish:
     name: Publish
-    runs-on: node-10
+    runs-on:
     steps:
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '10'
       - uses: actions/checkout@v1
       - name: Publish to the npm registry
         uses: "primer/publish@dbf72c725e7eb6309aee73215e4fbcbe2b9c48f8"
