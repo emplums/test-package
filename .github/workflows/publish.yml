@@ -1,0 +1,17 @@
+name: Test Package Publishing
+on: [push]
+
+jobs:
+  publish:
+    name: Publish
+    runs-on: ubuntu-latest
+    steps:
+      - name: Publish to the npm registry
+        uses: "primer/publish@7ca71a0d2b6aa5d7fb1d0905f5669bab1e311feb"
+        with:
+          args: "-- --unsafe-perm --allow-same-version"
+        with:
+          release-branch: "main"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
