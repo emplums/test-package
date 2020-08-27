@@ -8,7 +8,7 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: Publish to the npm registry
-        uses: "primer/publish@b78eef4b61d7a97303fbc41015272198a1bbbc8e"
+        uses: "primer/publish@a3b1c4b974335a47efdd8e98dd8e1550cc450783"
         with:
           args: "-- --unsafe-perm --allow-same-version"
           release-branch: "main"
