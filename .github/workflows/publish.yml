@@ -8,10 +8,10 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: Publish to the npm registry
-        uses: "primer/publish@bac5c57a3c000848218d50bf98ddbb352d51d62a"
+        uses: "primer/publish@fe7c3930016a1a85d6659ab4adb3efc0b7906df6"
         with:
           release-branch: "main"
+          npm-args: "--unsafe-perm --allow-same-version"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
-          args: '--dry-run -- --unsafe-perm'
