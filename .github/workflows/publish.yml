@@ -4,7 +4,7 @@ on: [push]
 jobs:
   publish:
     name: Publish
-    runs-on:
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/setup-node@v1
         with:
