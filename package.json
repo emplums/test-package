@@ -1,5 +1,5 @@
 {
-  "name": "test-package",
+  "name": "test-package-emplums",
   "version": "1.0.0",
   "description": "a test package for testing primer/publish",
   "main": "index.js",
