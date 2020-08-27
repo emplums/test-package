@@ -6,12 +6,15 @@ jobs:
     name: Publish
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '10'
       - uses: actions/checkout@v1
       - name: Publish to the npm registry
-        uses: "primer/publish@2ee7d87e9ef6a2fc8bdd94de97a19f8ac0bcc05c"
+        uses: "primer/publish@ab5207d694efd39a93591361ea5e1178a5eae827"
         with:
-          args: "-- --unsafe-perm --allow-same-version"
           release-branch: "main"
+          npm-args: "--unsafe-perm --allow-same-version"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
