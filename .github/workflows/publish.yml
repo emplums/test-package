@@ -11,7 +11,7 @@ jobs:
           node-version: '10'
       - uses: actions/checkout@v1
       - name: Publish to the npm registry
-        uses: "primer/publish@ab5207d694efd39a93591361ea5e1178a5eae827"
+        uses: "primer/publish@15a195dbb9b82116795a3325944a22223d00f8f5"
         with:
           release-branch: "main"
           npm-args: "--unsafe-perm --allow-same-version"
