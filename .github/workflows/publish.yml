@@ -6,6 +6,9 @@ jobs:
     name: Publish
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '10'
       - uses: actions/checkout@v1
       - name: Publish to the npm registry
         uses: "primer/publish@800849649c6426c27773887b2cb50625a61f8ace"
