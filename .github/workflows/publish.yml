@@ -10,7 +10,7 @@ jobs:
       - name: Publish to the npm registry
         uses: "primer/publish@e4cdfd4d372978708bd7c76338ba071f56310432"
         with:
-          npm-args: "-- --unsafe-perm --allow-same-version"
+          npm-args: "--unsafe-perm --allow-same-version"
           release-branch: "main"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
