@@ -1,6 +1,6 @@
 {
   "name": "test-package-emplums",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "a test package for testing primer/publish",
   "main": "index.js",
   "scripts": {
