@@ -15,7 +15,7 @@ jobs:
         with:
           npm_args: "--unsafe-perm --allow-same-version"
           default_branch: "main"
-          dry_run: "false"
+          dry_run: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
